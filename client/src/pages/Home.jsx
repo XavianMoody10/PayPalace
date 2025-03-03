@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import HeroImage from "../assets/hero-image.png";
 import { Header } from "../layouts/Header";
 import { PrimaryButton } from "../components/PrimaryButton/PrimaryButton";
+import { MarqueeSlider } from "../components/MarqueeSlider/MarqueeSlider";
 
 export const Home = () => {
   return (
@@ -18,13 +18,15 @@ export const Home = () => {
           <div className=" flex flex-col justify-between items-start gap-2 sm:flex-row sm:items-center">
             <PrimaryButton>Contact Us</PrimaryButton>
 
-            <p className=" font-primary sm:text-lg sm:text-end sm:w-[68%] xl:text-xl">
+            <p className=" font-primary sm sm:text-end sm:w-[68%] xl:text-xl">
               Our scalable payment processing solutions help you work better
             </p>
           </div>
 
           <img src={HeroImage} alt="Person holding a tablet device" />
         </section>
+
+        <MarqueeSlider />
       </main>
     </>
   );
