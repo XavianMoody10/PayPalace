@@ -4,7 +4,7 @@ import GrowYourBusinessIcon from "../../assets/grow-your-business-icon.svg";
 
 export const MarqueeSlider = () => {
   return (
-    <div className=" w-full my-9 overflow-x-hidden">
+    <div className=" w-full pt-16 pb-10 overflow-x-hidden">
       <motion.div
         animate={{ x: "-50%" }}
         transition={{

@@ -9,10 +9,82 @@ import paymentImage2 from "../assets/payment-image-2.png";
 import paymentIcon1 from "../assets/payment-icon-1.svg";
 import paymentIcon2 from "../assets/payment-icon-2.svg";
 import paymentIcon3 from "../assets/payment-icon-3.svg";
+import servicesIcon1 from "../assets/services-icon-1.svg";
+import servicesIcon2 from "../assets/services-icon-2.svg";
+import servicesIcon3 from "../assets/services-icon-3.svg";
+import servicesIcon4 from "../assets/services-icon-4.svg";
+
+const ServiceCard = ({ heading, icon, info }) => {
+  const serviceCardRef = useRef(null);
+  const isInView = useInView(serviceCardRef, { amount: 0.3 });
+
+  return (
+    <motion.div
+      ref={serviceCardRef}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: isInView ? 1 : 0 }}
+      transition={{ duration: 0.5 }}
+      className=" bg-white p-8 rounded-2xl space-y-2"
+    >
+      <div className=" flex items-center justify-between">
+        <h3 className=" font-primary font-semibold text-xl max-w-[150px] min-[400px]:text-2xl sm:text-xl lg:max-w-[100px] lg:text-2xl xl:max-w-none xl">
+          {heading}
+        </h3>
+
+        <img src={icon} alt="" width={80} />
+      </div>
+
+      <p className="text-[0.8rem] font-primary lg:text-[0.95rem]">{info}</p>
+    </motion.div>
+  );
+};
 
 export const Home = () => {
   const paymentSectionRef = useRef(null);
-  const isInView = useInView(paymentSectionRef, { amount: 0.7 });
+  const isInView = useInView(paymentSectionRef, { amount: 0.3 });
+  const services = [
+    {
+      heading: "Enhance productivity",
+      icon: servicesIcon1,
+      info: "We are streamline your processes, optimize workflows, and empower your team to focus on what matters most – serving your customers. Say goodbye to inefficiencies and hello to increased output.",
+    },
+    {
+      heading: "Complete support",
+      icon: servicesIcon2,
+      info: "We are streamline your processes, optimize workflows, and empower your team to focus on what matters most – serving your customers. Say goodbye to inefficiencies and hello to increased output.",
+    },
+    {
+      heading: "Innovative technology",
+      icon: servicesIcon3,
+      info: "We are streamline your processes, optimize workflows, and empower your team to focus on what matters most – serving your customers. Say goodbye to inefficiencies and hello to increased output.",
+    },
+    {
+      heading: "Reduce downtime",
+      icon: servicesIcon4,
+      info: "We are streamline your processes, optimize workflows, and empower your team to focus on what matters most – serving your customers. Say goodbye to inefficiencies and hello to increased output.",
+    },
+  ];
+
+  const servicesMap = services.map((s, i) => {
+    const isEvenIndex = i % 2 === 0;
+
+    if (!isEvenIndex) {
+      return (
+        <div key={s.heading} className="sm:relative sm:top-10">
+          <ServiceCard heading={s.heading} icon={s.icon} info={s.info} />
+        </div>
+      );
+    } else {
+      return (
+        <ServiceCard
+          key={s.heading}
+          heading={s.heading}
+          icon={s.icon}
+          info={s.info}
+        />
+      );
+    }
+  });
 
   return (
     <>
@@ -129,6 +201,18 @@ export const Home = () => {
             </div>
           </div>
         </motion.section>
+
+        <section className=" w-[90%] max-w-[1400px] mx-auto py-10">
+          <h2 className=" font-semibold text-4xl text-center lg:text-5xl lg:leading-16">
+            Our services
+          </h2>
+
+          <div className=" grid gap-x-3 gap-y-7 sm:grid-cols-2 mt-10">
+            {servicesMap}
+          </div>
+        </section>
+
+        <MarqueeSlider />
       </main>
     </>
   );
