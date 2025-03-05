@@ -29,19 +29,29 @@ export const Footer = () => {
 
           <ul className=" mt-2 space-y-2">
             <li>
-              <Link className=" font-primary text-lg">Home</Link>
+              <Link className=" font-primary text-lg hover:text-steel-blue">
+                Home
+              </Link>
             </li>
             <li>
-              <Link className=" font-primary text-lg">About us</Link>
+              <Link className=" font-primary text-lg hover:text-steel-blue">
+                About us
+              </Link>
             </li>
             <li>
-              <Link className=" font-primary text-lg">Stories</Link>
+              <Link className=" font-primary text-lg hover:text-steel-blue">
+                Stories
+              </Link>
             </li>
             <li>
-              <Link className=" font-primary text-lg">Contact</Link>
+              <Link className=" font-primary text-lg hover:text-steel-blue">
+                Contact
+              </Link>
             </li>
             <li>
-              <Link className=" font-primary text-lg">404 page</Link>
+              <Link className=" font-primary text-lg hover:text-steel-blue">
+                404 page
+              </Link>
             </li>
           </ul>
         </div>
@@ -51,22 +61,13 @@ export const Footer = () => {
 
           <div className=" flex gap-3 mt-2">
             <Link>
-              <i
-                className="fa-brands fa-twitter fa-2x"
-                style={{ color: "#005CFF" }}
-              ></i>
+              <i className="fa-brands fa-twitter fa-2x text-[#005CFF] hover:text-steel-blue"></i>
             </Link>
             <Link>
-              <i
-                className="fa-brands fa-linkedin fa-2x"
-                style={{ color: "#005CFF" }}
-              ></i>
+              <i className="fa-brands fa-linkedin fa-2x text-[#005CFF] hover:text-steel-blue"></i>
             </Link>
             <Link>
-              <i
-                className="fa-brands fa-facebook fa-2x"
-                style={{ color: "#005CFF" }}
-              ></i>
+              <i className="fa-brands fa-facebook fa-2x text-[#005CFF] hover:text-steel-blue"></i>
             </Link>
           </div>
         </div>
