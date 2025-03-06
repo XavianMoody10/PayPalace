@@ -8,7 +8,7 @@ import { motion, useInView } from "motion/react";
 
 export const LatestBlogs = () => {
   const section = useRef(null);
-  const isInView = useInView(section, { amount: 0.6, once: true });
+  const isInView = useInView(section, { amount: 0.2, once: true });
 
   return (
     <motion.section
@@ -24,7 +24,7 @@ export const LatestBlogs = () => {
         </h2>
 
         <Link
-          className={` text-center text-[#005CFF] border-2 border-[#005CFF] font-semibold whitespace-nowrap py-3 px-7 rounded-4xl duration-150 hover:bg-[#005CFF] hover:text-white`}
+          className={` text-center text-dark-blue border-2 border-dark-blue font-semibold whitespace-nowrap py-3 px-7 rounded-4xl duration-150 hover:bg-dark-blue hover:text-white`}
         >
           See All
         </Link>

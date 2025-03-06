@@ -3,7 +3,7 @@ import { motion, useInView } from "motion/react";
 
 export const ProfessionalService = () => {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { amount: 0.3, once: true });
+  const isInView = useInView(sectionRef, { amount: 0.2, once: true });
 
   return (
     <motion.section
@@ -11,7 +11,7 @@ export const ProfessionalService = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: isInView ? 1 : 0 }}
       transition={{ duration: 0.5 }}
-      className=" w-[90%] mx-auto max-w-[1400px] my-12 bg-[#0F1E3B] p-7 rounded-3xl lg:flex lg:justify-between lg:gap-8 lg:p-10"
+      className=" w-[90%] mx-auto max-w-[1400px] my-12 bg-navy-blue p-7 rounded-3xl lg:flex lg:justify-between lg:gap-8 lg:p-10"
     >
       <div className=" space-y-5">
         <h2 className=" text-white font-primary font-semibold text-3xl lg:text-4xl">
@@ -24,7 +24,7 @@ export const ProfessionalService = () => {
       </div>
 
       <div className=" grid gap-4 sm:grid-cols-2 lg:w-[70%] mt-6 lg:mt-0">
-        <div className=" w-full bg-[#005CFF] p-5 space-y-2 rounded-xl">
+        <div className=" w-full bg-dark-blue p-5 space-y-2 rounded-xl">
           <h3 className=" text-white font-primary font-semibold text-xl max-w-[150px] min-[400px]:text-2xl sm:text-xl lg:max-w-[100px] lg:text-2xl xl:max-w-none xl">
             Professional Services
           </h3>
@@ -36,7 +36,7 @@ export const ProfessionalService = () => {
           </p>
         </div>
 
-        <div className=" w-full bg-[#005CFF] p-5 space-y-2 rounded-xl">
+        <div className=" w-full bg-dark-blue p-5 space-y-2 rounded-xl">
           <h3 className=" text-white font-primary font-semibold text-xl max-w-[150px] min-[400px]:text-2xl sm:text-xl lg:max-w-[100px] lg:text-2xl xl:max-w-none xl">
             Professional Services
           </h3>
@@ -48,7 +48,7 @@ export const ProfessionalService = () => {
           </p>
         </div>
 
-        <div className=" w-full bg-[#005CFF] p-5 space-y-2 rounded-xl">
+        <div className=" w-full bg-dark-blue p-5 space-y-2 rounded-xl">
           <h3 className=" text-white font-primary font-semibold text-xl max-w-[150px] min-[400px]:text-2xl sm:text-xl lg:max-w-[100px] lg:text-2xl xl:max-w-none xl">
             Professional Services
           </h3>
@@ -60,7 +60,7 @@ export const ProfessionalService = () => {
           </p>
         </div>
 
-        <div className=" w-full bg-[#005CFF] p-5 space-y-2 rounded-xl">
+        <div className=" w-full bg-dark-blue p-5 space-y-2 rounded-xl">
           <h3 className=" text-white font-primary font-semibold text-xl max-w-[150px] min-[400px]:text-2xl sm:text-xl lg:max-w-[100px] lg:text-2xl xl:max-w-none xl">
             Professional Services
           </h3>
@@ -72,7 +72,7 @@ export const ProfessionalService = () => {
           </p>
         </div>
 
-        <div className=" w-full bg-[#005CFF] p-5 space-y-2 rounded-xl">
+        <div className=" w-full bg-dark-blue p-5 space-y-2 rounded-xl">
           <h3 className=" text-white font-primary font-semibold text-xl max-w-[150px] min-[400px]:text-2xl sm:text-xl lg:max-w-[100px] lg:text-2xl xl:max-w-none xl">
             Professional Services
           </h3>
@@ -84,7 +84,7 @@ export const ProfessionalService = () => {
           </p>
         </div>
 
-        <div className=" w-full bg-[#005CFF] p-5 space-y-2 rounded-xl">
+        <div className=" w-full bg-dark-blue p-5 space-y-2 rounded-xl">
           <h3 className=" text-white font-primary font-semibold text-xl max-w-[150px] min-[400px]:text-2xl sm:text-xl lg:max-w-[100px] lg:text-2xl xl:max-w-none xl">
             Professional Services
           </h3>

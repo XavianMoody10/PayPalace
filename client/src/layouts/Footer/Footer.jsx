@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className=" bg-[#E7F0FF] pt-20">
+    <footer className=" bg-light-blue pt-20">
       <div className=" w-[90%] mx-auto max-w-[1400px] grid grid-cols-2 gap-10 min-[800px]:gap-32 lg:grid-cols-4">
         <div className=" col-span-3 space-y-2 lg:col-span-2">
           <div className=" flex gap-2">
@@ -13,7 +13,7 @@ export const Footer = () => {
               className=" p-2 bg-white rounded-lg w-full max-w-[800px]"
             />
 
-            <button className=" text-center bg-[#005CFF] text-white border-2 border-white font-semibold whitespace-nowrap py-3 px-7 rounded-xl duration-150 hover:bg-white hover:text-[#005CFF] hover:border-[#005CFF]">
+            <button className=" text-center bg-dark-blue text-white border-2 border-white font-semibold whitespace-nowrap py-3 px-7 rounded-xl duration-150 hover:bg-white hover:text-dark-bluebg-dark-blue hover:border-dark-bluebg-dark-blue">
               Subscribe
             </button>
           </div>
@@ -61,13 +61,13 @@ export const Footer = () => {
 
           <div className=" flex gap-3 mt-2">
             <Link>
-              <i className="fa-brands fa-twitter fa-2x text-[#005CFF] hover:text-steel-blue"></i>
+              <i className="fa-brands fa-twitter fa-2x text-dark-blue hover:text-steel-blue"></i>
             </Link>
             <Link>
-              <i className="fa-brands fa-linkedin fa-2x text-[#005CFF] hover:text-steel-blue"></i>
+              <i className="fa-brands fa-linkedin fa-2x text-dark-blue hover:text-steel-blue"></i>
             </Link>
             <Link>
-              <i className="fa-brands fa-facebook fa-2x text-[#005CFF] hover:text-steel-blue"></i>
+              <i className="fa-brands fa-facebook fa-2x text-dark-blue hover:text-steel-blue"></i>
             </Link>
           </div>
         </div>
@@ -80,7 +80,7 @@ export const Footer = () => {
         </ul>
       </div>
 
-      <p className=" text-[#0A0F1C]/15 font-primary font-bold leading-normal text-5xl text-center  sm:text-[7rem] lg:text-[11rem] xl:text-[13.5rem] 2xl:text-[16.8rem]">
+      <p className=" text-transparent-gray/15 font-primary font-bold leading-normal text-5xl text-center sm:text-[7rem] lg:text-[11rem] xl:text-[13.5rem] 2xl:text-[16.8rem]">
         PayPalace
       </p>
     </footer>

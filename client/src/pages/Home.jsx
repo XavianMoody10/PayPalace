@@ -15,7 +15,7 @@ export const Home = () => {
     <>
       <Header />
 
-      <main className=" bg-[#E7F0FF]">
+      <main className=" bg-light-blue">
         <Landing />
 
         <MarqueeSlider />

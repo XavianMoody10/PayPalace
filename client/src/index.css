@@ -6,6 +6,9 @@
   --font-primary: "Montserrat", serif;
 
   /* Colors */
+  --color-dark-blue: #005cff;
   --color-light-blue: #e7f0ff;
   --color-steel-blue: #8694b5;
+  --color-navy-blue: #0f1e3b;
+  --color-transparent-gray: #0a0f1c;
 }
