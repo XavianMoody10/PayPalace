@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../layouts/Header";
+import { Header } from "../layouts/Header/Header";
 import { MarqueeSlider } from "../components/MarqueeSlider/MarqueeSlider";
 import { Footer } from "../layouts/Footer/Footer";
 import { Sponsors } from "../components/Sponsor/Sponsors";
