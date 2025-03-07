@@ -4,7 +4,7 @@ import { MarqueeSlider } from "../components/MarqueeSlider/MarqueeSlider";
 import { Footer } from "../layouts/Footer/Footer";
 import { Sponsors } from "../components/Sponsor/Sponsors";
 import { TemplateAd } from "../components/TemplateAd/TemplateAd";
-import { ProfessionalService } from "../components/ProfessionalService/professionalService";
+import { ProfessionalService } from "../components/ProfessionalService/ProfessionalService";
 import { Services } from "../components/Services/Services";
 import { ScalablePaymentInfo } from "../components/ScalablePaymentInfo/ScalablePaymentInfo";
 import { LatestBlogs } from "../components/LatestBlogs/LatestBlogs";
