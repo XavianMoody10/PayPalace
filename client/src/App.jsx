@@ -8,6 +8,7 @@ import {
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Stories } from "./pages/Stories";
+import { Contact } from "./pages/Contact";
 
 const App = () => {
   // All routes
@@ -17,6 +18,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="stories" element={<Stories />} />
+        <Route path="contact" element={<Contact />} />
       </Route>
     )
   );
