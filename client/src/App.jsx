@@ -9,6 +9,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Stories } from "./pages/Stories";
 import { Contact } from "./pages/Contact";
+import { PageNotFound } from "./pages/PageNotFound";
 
 const App = () => {
   // All routes
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="about" element={<About />} />
         <Route path="stories" element={<Stories />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<PageNotFound />} />
       </Route>
     )
   );
