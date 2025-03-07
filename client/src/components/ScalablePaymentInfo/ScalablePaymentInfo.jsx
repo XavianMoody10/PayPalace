@@ -13,7 +13,7 @@ export const ScalablePaymentInfo = () => {
   return (
     <motion.section
       ref={paymentSectionRef}
-      className=" w-[90%] max-w-[1400px] mx-auto"
+      className=" w-[90%] max-w-[1400px] mx-auto mt-10"
       initial={{ opacity: 0 }}
       animate={{ opacity: isInView ? 1 : 0 }}
       transition={{ duration: 1.2 }}

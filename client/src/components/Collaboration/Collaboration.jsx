@@ -11,7 +11,7 @@ export const Collaboration = () => {
 
   return (
     <section ref={sectionRef} className=" mt-16">
-      <div className=" w-[90%] max-w-[1400px] mx-auto flex flex-col sm:flex-row sm:justify-between sm:gap-10">
+      <div className=" w-[90%] max-w-[1400px] mx-auto flex flex-col gap-4 sm:flex-row sm:justify-between sm:gap-10">
         <motion.h2
           initial={isDesktop ? { x: -30, opacity: 0 } : { x: 0, opacity: 1 }}
           animate={isInView && { x: 0, opacity: 1 }}

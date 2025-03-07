@@ -10,9 +10,9 @@ export const PageNotFound = () => {
       <Header></Header>
 
       <main className=" bg-light-blue">
-        <div className=" flex flex-col gap-3 justify-between w-[90%] max-w-[1400px] mx-auto lg:flex-row lg:items-center pt-10 pb-28">
-          <div className=" space-y-10">
-            <h1 className=" font-primary font-semibold text-4xl sm:text-7xl sm:leading-14">
+        <div className=" flex flex-col gap-8 justify-between w-[90%] max-w-[1400px] mx-auto lg:flex-row lg:items-center pt-10 pb-28">
+          <div className=" sm:space-y-9">
+            <h1 className=" font-primary font-semibold text-[5.5rem] sm:leading-14">
               404
             </h1>
 

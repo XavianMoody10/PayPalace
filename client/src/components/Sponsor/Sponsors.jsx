@@ -5,7 +5,7 @@ import loremipsumLogo3 from "../../assets/logoipsum-logo-3.svg";
 
 export const Sponsors = () => {
   return (
-    <div className=" w-[90%] max-w-[1400px] mx-auto bg-white p-8 rounded-2xl space-y-14">
+    <div className=" w-[90%] max-w-[1400px] mx-auto bg-white p-8 rounded-2xl space-y-14 mt-10">
       <h2 className=" font-primary font-semibold text-center text-2xl lg:text-3xl">
         “They've consistently facilitated smooth and efficient transactions.”
       </h2>
